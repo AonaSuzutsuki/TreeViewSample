@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Prism.Commands;
 using Reactive.Bindings;
-using WpfApp1.Models;
+using TreeViewSample.Models;
 
-namespace WpfApp1.ViewModels
+namespace TreeViewSample.ViewModels
 {
     public class MainWindowViewModel
     {
@@ -21,6 +18,7 @@ namespace WpfApp1.ViewModels
         #region Event Properties
         public ICommand ClearBtClicked { get; set; }
         public ICommand DrawBtClicked { get; set; }
+        public ICommand OpenBtClicked { get; set; }
         #endregion
 
         public MainWindowViewModel(MainWindowModel model)
@@ -30,6 +28,7 @@ namespace WpfApp1.ViewModels
 
             ClearBtClicked = new DelegateCommand(ClearBt_Clicked);
             DrawBtClicked = new DelegateCommand(DrawBt_Clicked);
+            OpenBtClicked = new DelegateCommand(OpenBt_Clicked);
         }
 
         #region Event Methods
@@ -41,6 +40,11 @@ namespace WpfApp1.ViewModels
         public void DrawBt_Clicked()
         {
             model.DrawItems();
+        }
+
+        public void OpenBt_Clicked()
+        {
+            model.OpenItem();
         }
         #endregion
     }

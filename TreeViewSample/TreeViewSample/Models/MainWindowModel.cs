@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 using Prism.Mvvm;
 
-namespace WpfApp1.Models
+namespace TreeViewSample.Models
 {
     public class MainWindowModel : BindableBase
     {
@@ -71,6 +69,11 @@ namespace WpfApp1.Models
             {
                Items.Add(item); 
             }
+        }
+
+        public void OpenItem()
+        {
+            Items[1].IsExpanded = true;
         }
     }
 }
