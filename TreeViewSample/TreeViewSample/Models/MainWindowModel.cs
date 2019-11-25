@@ -72,5 +72,10 @@ namespace TreeViewSample.Models
                Items.Add(item); 
             }
         }
+
+        public void OpenItem()
+        {
+            Items[1].IsExpanded = true;
+        }
     }
 }

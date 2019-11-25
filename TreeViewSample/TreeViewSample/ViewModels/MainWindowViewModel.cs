@@ -21,6 +21,7 @@ namespace TreeViewSample.ViewModels
         #region Event Properties
         public ICommand ClearBtClicked { get; set; }
         public ICommand DrawBtClicked { get; set; }
+        public ICommand OpenBtClicked { get; set; }
         #endregion
 
         public MainWindowViewModel(MainWindowModel model)
@@ -30,6 +31,7 @@ namespace TreeViewSample.ViewModels
 
             ClearBtClicked = new DelegateCommand(ClearBt_Clicked);
             DrawBtClicked = new DelegateCommand(DrawBt_Clicked);
+            OpenBtClicked = new DelegateCommand(OpenBt_Clicked);
         }
 
         #region Event Methods
@@ -41,6 +43,11 @@ namespace TreeViewSample.ViewModels
         public void DrawBt_Clicked()
         {
             model.DrawItems();
+        }
+
+        public void OpenBt_Clicked()
+        {
+            model.OpenItem();
         }
         #endregion
     }

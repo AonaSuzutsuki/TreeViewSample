@@ -31,6 +31,7 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal">
             <Button Content="Clear" Height="30" Width="100" Command="{Binding ClearBtClicked}" />
             <Button Content="Draw" Height="30" Width="100" Command="{Binding DrawBtClicked}" />
+            <Button Content="Open(Item2)" Height="30" Width="100" Command="{Binding OpenBtClicked}" />
         </StackPanel>
 
     </Grid>
