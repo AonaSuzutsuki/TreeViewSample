@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Text;
 using Prism.Mvvm;
 
-namespace WpfApp1.Models
+namespace TreeViewSample.Models
 {
     public class MainWindowModel : BindableBase
     {

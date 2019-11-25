@@ -4,9 +4,9 @@ using System.Text;
 using System.Windows.Input;
 using Prism.Commands;
 using Reactive.Bindings;
-using WpfApp1.Models;
+using TreeViewSample.Models;
 
-namespace WpfApp1.ViewModels
+namespace TreeViewSample.ViewModels
 {
     public class MainWindowViewModel
     {

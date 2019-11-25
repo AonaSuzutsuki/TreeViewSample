@@ -12,10 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfApp1.Models;
-using WpfApp1.ViewModels;
+using TreeViewSample.Models;
+using TreeViewSample.ViewModels;
 
-namespace WpfApp1.Views
+namespace TreeViewSample.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
