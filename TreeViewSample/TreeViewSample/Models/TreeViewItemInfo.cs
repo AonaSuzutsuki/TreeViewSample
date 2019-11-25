@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Prism.Mvvm;
 
-namespace WpfApp1.Models
+namespace TreeViewSample.Models
 {
     public class TreeViewItemInfo : BindableBase
     {
         #region Fields
-        private bool _isExpanded;
-        private bool _isSelected;
+        private bool isExpanded;
         #endregion
 
         #region Properties
@@ -18,15 +15,11 @@ namespace WpfApp1.Models
 
         public bool IsExpanded
         {
-            get => _isExpanded;
-            set => SetProperty(ref _isExpanded, value);
+            get => isExpanded;
+            set => SetProperty(ref isExpanded, value);
         }
 
-        public bool IsSelected
-        {
-            get => _isSelected;
-            set => SetProperty(ref _isSelected, value);
-        }
+        public bool IsSelected { get; set; }
         #endregion
     }
 }
